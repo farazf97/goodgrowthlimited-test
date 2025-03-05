@@ -42,13 +42,50 @@ A weather section appears below the "Get here" area, showing:
 - Blends naturally with existing page content  
 - Respects visitor privacy (no personal data collected)  
 
+(Due to technical issues, the search service is temporarily unavailable.)
+
+Here's a clear **README section** for running the code as a Chrome snippet:
+
+---
+
+## 🚀 How to Run (Chrome Snippet)
+
+This script can be easily injected into any National Trust property page using Chrome DevTools Snippets. Follow these steps:
+
+### **Prerequisites**
+- Google Chrome browser
+- Access to a National Trust [`Property Page`](https://www.nationaltrust.org.uk/visit/warwickshire/packwood-house)
+
+---
+
+### **Step-by-Step Guide**
+
+1. **Open Chrome DevTools**  
+   - Navigate to the National Trust property page  
+   - Press `Ctrl+Shift+I` (Windows/Linux) or `Cmd+Opt+I` (Mac)  
+
+2. **Go to Snippets**  
+   - In DevTools, click the **Sources** tab  
+   - Select **Snippets** in the left panel  
+   - Click `+ New Snippet`  
+
+3. **Paste the Code**  
+   - Copy the entire code from [`weather-widget.js`](weather-widget.js)  
+   - Paste it into the new snippet file  
+   - Press `Ctrl+S`/`Cmd+S` to save  
+
+4. **Run the Snippet**  
+   - Right-click the snippet name  
+   - Select **Run**  
+   - The weather widget will appear below the "Getting here" section  
+---
+
+<img width="1156" alt="Screenshot 2025-03-05 at 00 12 33" src="https://github.com/user-attachments/assets/09e10065-0672-45b9-826b-92b976bfa6c5" />
+
 **Next Steps** 
 Add A/B testing (commented sample code available) where:
 - 50% of visitors see the weather (test group) 
 - 50% see the normal page (control group)  
 - Measures if weather displays lead to more visits (Conversion rate)
 
-
 This solution helps the National Trust enhance visitor experience while gathering data to confirm if weather displays drive engagement.
-
-<img width="1156" alt="Screenshot 2025-03-05 at 00 12 33" src="https://github.com/user-attachments/assets/09e10065-0672-45b9-826b-92b976bfa6c5" />
