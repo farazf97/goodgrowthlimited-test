@@ -42,10 +42,6 @@ A weather section appears below the "Get here" area, showing:
 - Blends naturally with existing page content  
 - Respects visitor privacy (no personal data collected)  
 
-(Due to technical issues, the search service is temporarily unavailable.)
-
-Here's a clear **README section** for running the code as a Chrome snippet:
-
 ---
 
 ## 🚀 How to Run (Chrome Snippet)
