@@ -81,15 +81,14 @@ const widgetStyle = `<style>
         
         injectStyles() {
             document.head.insertAdjacentHTML("beforeend", widgetStyle);
-            // if (!document.getElementById('nt-weather-styles')) {
             //  TODO: Render styles conditionally
-            // }
+            // if (!document.getElementById('nt-weather-styles')) { }
         }
+        
         async initialize() {
             console.log("WeatherIntegration initialize")
-            // if (!this.checkPrerequisites()) return;
-
-            // TODO: sample code, uncomment to enable AB testing splitting users in 2 groups - control and test
+            
+            // TODO: AB testing  -  sample code, uncomment to enable AB testing splitting users in 2 groups - control and test
             // Group persisted across visits using browser storage
             // Tracks impressions and conversions
             
@@ -286,7 +285,9 @@ const widgetStyle = `<style>
             });
         }
 
-
+        // TODO: AB testing  - sample code, uncomment to enable AB testing splitting users in 2 groups - control and test
+        // Group persisted across visits using browser storage
+        // Tracks impressions and conversions
         // setupAnalytics() {
         //     if (!sessionStorage.getItem(CONFIG.IMPRESSION_TRACKED_KEY)) {
         //         navigator.sendBeacon(CONFIG.ANALYTICS_ENDPOINT, JSON.stringify({
@@ -348,8 +349,6 @@ const widgetStyle = `<style>
         }
     }
 
-
-    // new WeatherIntegration().initialize();
     // Initialize when DOM is ready
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', () => new WeatherIntegration().initialize());
